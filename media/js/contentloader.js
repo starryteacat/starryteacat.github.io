@@ -14,7 +14,7 @@ document.querySelector("#nav").innerHTML = `
 
 <img src="/media/images/amethyst1.png" id="top-left-decoration" class="decoration">
 <img src="/media/images/amethyst2.png" id="bottom-right-decoration" class="decoration">
-`;
+`; // Please for the love of god do NOT append <img>s to anything other than #nav because imgmodal.js HATES IT
 
 import {} from "/media/js/imgmodal.js";
 
