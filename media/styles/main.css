@@ -1,0 +1,192 @@
+/*
+ * AUTHOR: toydotgame
+ * CREATED ON: 2025-03-28
+ * Generic page CSS
+ */
+
+:root {
+	--text-color: #99a4e7;
+	--text-alt: #eedf9f; /* Colour of emphasised (bold) text */
+	--site-alt: #f7a1c9; /* Colour of headers, links, and nav items */
+	--nav-bg: #6d66c6;
+	--content-bg: #42448a;
+	--dim-bg: #3e3e3e;
+}
+
+@font-face {
+	font-family: "Dreaming Outloud";
+	src: url("/media/fonts/DO-Sans.otf");
+	font-display: swap;
+} @font-face { /* Specify Twermoji as a fallback font for emojis */
+	font-family: "Twemoji";
+	src: url("/media/fonts/Twemoji.ttf");
+	font-display: swap;
+}
+
+/* DOCUMENT */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Dreaming Outloud", "Twemoji", cursive;
+	word-wrap: break-word;
+}
+
+body {
+	background-color: #000; /* Fallback */
+	background-image: url("/media/images/bg_stars.gif");
+	color: var(--text-color);
+	font-size: 1.25em; /* Multiply all font sizes by 1.25 */
+}
+
+#nav {
+	width: 100%;
+	height: 50px;
+	top: 0;
+	position: sticky;
+	margin-bottom: 14px;
+	background-color: var(--nav-bg);
+	text-align: center;
+}
+
+#nav > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#navlogo {
+	margin: 5px;
+	width: 100px;
+	height: 40px;
+	background-color: #000;
+}
+
+#navspacer {
+	margin: 0 14px;
+	color: var(--site-alt);
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.navbutton {
+	margin: 5px;
+	padding: 7px 14px;
+	height: 40px;
+	border-radius: 40px;
+	color: var(--nav-bg) !important;
+	background-color: var(--site-alt);
+	line-height: 27px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#content {
+	margin: 0 auto;
+	padding: 7px;
+	width: 80%;
+		max-width: 800px;
+	background-color: var(--content-bg);
+}
+
+#footer {
+	margin: 0 auto;
+		margin-bottom: 14px;
+	padding: 7px;
+	width: 80%; /* Copy #nav dimensions so the footer effectively appends itself */
+		max-width: 800px;
+	background-color: var(--dim-bg);
+	text-align: center;
+}
+
+/* TEXT & ELEMENT STYLES */
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--site-alt);
+	clear: both; /* Clearfix hack */
+}
+
+a[href] {
+	color: var(--site-alt);
+}
+
+b, strong {
+	color: var(--text-alt);
+}
+
+#content img:not([width]) {
+	width: 100%;
+}
+
+#content img {
+	margin: 5px 0;
+	border: 2px solid var(--site-alt);
+		border-radius: 10px;
+	cursor: pointer; /* For image modals */
+}
+
+.fleft {
+	float: left;
+	margin-right: 10px !important;
+}
+
+.fcenter {
+	display: block;
+	margin: 5px auto !important;
+}
+
+.fright {
+	float: right;
+	margin-left: 10px !important;
+}
+
+.freset { /* Clearfix to display below floats instead of wrapping around */
+	clear: both;
+}
+
+/* IMAGE MODAL, child of #content */
+
+#modaldim {
+	position: fixed;
+	display: none;
+	z-index: 1; /* Copyleft element displays above modaldim for some reason */
+	padding: 5%;
+	width: 100%;
+	height: 100%;
+		top: 0;
+		left: 0;
+	background-color: color-mix(in srgb, var(--dim-bg), transparent 10%);
+		backdrop-filter: blur(5px);
+	text-align: center;
+}
+
+#modalimg {
+	/* Reset styles from normal imgs on the page */
+	margin: 0 !important;
+	border: 0 !important;
+		border-radius: 0 !important;
+	
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+/* RESPONSIVE (Tweaks to work on mobile) */
+
+@media only screen and (max-width: 600px) {
+	#content {
+		width: 90%;
+	}
+
+	#modaldim {
+		padding: 0;
+	}
+
+	#nav {
+		height: unset;
+	}
+
+	#navspacer {
+		display: none;
+	}
+}
