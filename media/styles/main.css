@@ -89,6 +89,12 @@ body {
 	background-color: var(--content-bg);
 }
 
+#content:after { /* https://www.w3schools.com/css/css_float_clear.asp for content to expand to hold images */
+	content: "";
+	clear: both;
+	display: table;
+}
+
 #footer {
 	margin: 0 auto;
 		margin-bottom: 28px;
