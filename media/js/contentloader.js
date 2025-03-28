@@ -12,18 +12,19 @@ document.querySelector("#nav").innerHTML = `
 <a class="navbutton" href="#">Button 3</a>
 <a class="navbutton" href="#">Button 4</a>
 
+<img src="/media/images/amethyst1.png" id="top-left-decoration" class="decoration">
+<img src="/media/images/amethyst2.png" id="bottom-right-decoration" class="decoration">
 `;
 
 import {} from "/media/js/imgmodal.js";
 
-var badges = `
+let badges = `
 <a href="https://toydotgame.net/"><img src="/media/images/badges/toydotgame.gif" width="88"></a>
 `;
-//export { badges };
 
-var footer = `
+let footer = `
 <br>
-<p>Website ⓒ 2025 starryteacat</p>
+<p>Website © 2025 starryteacat</p>
 `;
 
 document.querySelector("#footer").innerHTML = badges + footer;

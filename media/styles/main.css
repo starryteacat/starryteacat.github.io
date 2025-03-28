@@ -42,7 +42,7 @@ body {
 
 #nav {
 	width: 100%;
-	height: 50px;
+	min-height: 50px;
 	top: 0;
 	position: sticky;
 	margin-bottom: 14px;
@@ -91,7 +91,7 @@ body {
 
 #footer {
 	margin: 0 auto;
-		margin-bottom: 14px;
+		margin-bottom: 28px;
 	padding: 7px;
 	width: 80%; /* Copy #nav dimensions so the footer effectively appends itself */
 		max-width: 800px;
@@ -144,12 +144,29 @@ b, strong {
 	clear: both;
 }
 
+.decoration {
+	position: fixed; /* Relative to viewport */
+	overflow: hidden;
+}
+
+#top-left-decoration {
+	top: 50px;
+	left: 0;
+	width: 17.5%;
+}
+
+#bottom-right-decoration {
+	bottom: 0;
+	right: 0;
+	width: 45%;
+}
+
 /* IMAGE MODAL, child of #content */
 
 #modaldim {
 	position: fixed;
 	display: none;
-	z-index: 1; /* Copyleft element displays above modaldim for some reason */
+	z-index: 1;
 	padding: 5%;
 	width: 100%;
 	height: 100%;
@@ -182,8 +199,25 @@ b, strong {
 		padding: 0;
 	}
 
+	/* Make nav stuff 3/5ths the size */
 	#nav {
-		height: unset;
+		overflow: hidden; /* Don't play up when #navlogo display:block */
+		min-height: 30px;
+	}
+
+	#navlogo {
+		display: block;
+		margin: 3px auto;
+		width: 60px;
+		height: 24px;
+	}
+	
+	.navbutton {
+		margin: 3px;
+		padding: 4.2px 8.4px;
+		height: 24px;
+		border-radius: 24px;
+		line-height: 16.2px;
 	}
 
 	#navspacer {
