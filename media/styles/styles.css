@@ -1,0 +1,19 @@
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-weight: 900;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-weight: 900;
+}
+
+p {
+    color: white;
+    font-family: Georgia, serif;
+    font-weight: 600;
+}
