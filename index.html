@@ -17,15 +17,53 @@
 	<meta property="og:image" content="/media/resources/banner.png">
 	<meta name="viewport" content="width=device-width">
 	<script src="/media/js/contentloader.js" type="module"></script>
+    <style>
+        .column img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
-<body>
-    <h1>home !</h1>
-    <h2>
-        <a href="https://starryteacat.net/">home</a>
-        <a href="https://starryteacat.net/blog">blog</a>
-        <a href="https://starryteacat.net/art">art</a>
-    </h2>
 
-    <p>hey there ! i'm <a href="https://instagram.com/starryteacat">starryteacat</a> ! welcome to my corner of the world-wide-web  :3<br>i'm a beginner at html coding, and my plans for this web-site and creativity greatly overpowers my skills, but i have hope that slowly but surely this to come together !  </p>
+<body>
+    <div class="header">
+        <h1>home !</h1>
+    </div>
+    
+    <div class="topnav">
+        <h2>
+            <a href="https://starryteacat.net/">home</a>
+            <a href="https://starryteacat.net/blog">blog</a>
+            <a href="https://starryteacat.net/art">art</a>
+            <a href="https://starryteacat.net/zines">zines</a>
+        </h2>
+    </div> 
+    
+    <div class="row">
+        <div class="column side">
+            <h3>about me !</h3>
+
+            <img src="media/images/dogwow.jpg" alt="me" width="233.33" height="171.33" align="left">
+
+             <h3>socials !</h3>
+             <p>
+                 <a href="https://instagram.com/starryteacat">instagram</a><br>
+                 <a href="">twitter</a><br>
+                 <a href="">tumblr</a><br>
+                 <a href="">steam</a>    
+                </p>
+        </div>
+        
+            <div class="column middle">
+                <h3>welcome !</h3>
+                <p>hey there ! i'm starryteacat ! welcome to my corner of the world-wide-web  :3<br>feel free to check out my blog, art and zines above . have fun dear web-browser, and thank you for checking out my web-site ! </p>
+            </div>
+
+            <div class="column side">
+                <h3>recent posts !</h3>
+                <p>nothing here yet, stay tuned dear web-browser...</p>
+            </div>
+        </div>
+      
 </body>
