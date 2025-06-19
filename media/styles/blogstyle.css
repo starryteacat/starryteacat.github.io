@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../../media/images/bg_stars.gif");
+}
+
+.header {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-weight: 900;
+}
+
+.topnav {
+    color: white;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-weight: 900;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-weight: 700;
+}
+p {
+    color: white;
+    text-align: left;
+    font-family: Georgia, serif;
+    font-weight: 600;
+    padding: 20px;
+}
