@@ -14,6 +14,8 @@ body{
     text-align: center;
     font-family: Georgia, serif;
     font-weight: 900;
+    padding: 20px;
+    margin: 10px;
 }
 
 .topnav {
@@ -35,4 +37,16 @@ p {
     font-family: Georgia, serif;
     font-weight: 600;
     padding: 20px;
+}
+
+.column {
+    float: middle;
+    background-color: black;
+    padding: 10px;
+    border-left: white;
+    border-right: white;
+    border-left-style: dashed;
+    border-right-style: dashed;
+    margin-left: 10%;   
+    margin-right: 10%;
 }
