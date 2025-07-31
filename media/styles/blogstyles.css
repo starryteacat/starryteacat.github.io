@@ -6,31 +6,44 @@
 
 body{
     background-image: url("../../media/images/bg_stars.gif");
+    padding-bottom: 80px;
+    width: 100%;
+    margin-bottom: 60px;
+    font-family: Georgia, serif;
+    font-weight: 900; 
+}
+
+.title {
+    margin: 10px;
+    border: solid white;
+    border-style: dashed;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-weight: 900; 
 }
 
 .header {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding: 4px;
     font-size: 40px;
-    color: white;
-    text-align: center;
-    font-family: Georgia, serif;
-    font-weight: 900;
-    padding: 20px;
-    margin: 10px;
 }
 
 .topnav {
-    color: white;
-    text-align: center;
-    font-family: Georgia, serif;
-    font-weight: 900;
+    border-top: none;
+    margin-top: 0px;
+    padding: 3px;
+
 }
 
 h3 {
     color: white;
     text-align: center;
-    font-family: Georgia, serif;
-    font-weight: 700;
 }
+
+
 p {
     color: white;
     text-align: left;
@@ -39,12 +52,11 @@ p {
     padding: 20px;
 }
 
-.column {
+.blank {
     float: middle;
     background-color: black;
     padding: 10px;
-    border-left: white;
-    border-right: white;
+    border: white;
     border-left-style: dashed;
     border-right-style: dashed;
     margin-left: 10%;   

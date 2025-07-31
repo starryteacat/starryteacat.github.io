@@ -12,19 +12,21 @@ html {
 body{
     background-image: url("../../media/images/bg_stars.gif");
     padding-bottom: 80px;
-    width: 100%
+    width: 100%;
     margin-bottom: 60px;
+    font-family: Georgia, serif;
+    font-weight: 900; 
+    color: white;
+    display: flex; 
+    flex-direction: column;
 }
 
 .title {
     margin: 10px;
-    border: solid white;
+    border: white;
     border-style: dashed;
     background-color: black;
-    color: white;
     text-align: center;
-    font-family: Georgia, serif;
-    font-weight: 900; 
 }
 
 .header {
@@ -41,22 +43,15 @@ body{
 
 }
 
-h3 {
-    color: white;
-    text-align: center;
-    font-family: Georgia, serif;
-    font-weight: 700;
-}
-
 p {
-    color: white;
     text-align: left;
-    font-family: Georgia, serif;
     font-weight: 600;
     padding: 20px;
 }
 
-
+h3 {
+    text-align: center;
+}
 
 .column {
     float: left;
@@ -65,7 +60,7 @@ p {
     border: white;
     border-style: dotted;
     border-radius: 5%;
-    margin: 1%;   
+    margin: 1%;     
 }
 
 .column.side {
@@ -81,21 +76,31 @@ p {
     width: 100%;
     }
 }
+
+.blank {
+    float: middle;
+    background-color: black;
+    padding: 10px;
+    border: white;
+    border-left-style: dashed;
+    border-right-style: dashed;
+    margin-left: 10%;   
+    margin-right: 10%;
+}
     
+.smallspace {
+    margin-bottom: 15px;
+}
+
 .footer {
-    position: fixed;
     position: static;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    color: white;
     text-align: center; 
-    font-family: Georgia, serif;
-    font-weight: 300;
     background-color: darkslateblue;
     padding: 5px;
     border: white;
     border-top-style: dashed;
-    margin-top: 10px;
 }
