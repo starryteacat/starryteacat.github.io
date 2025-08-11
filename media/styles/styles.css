@@ -51,6 +51,7 @@ p {
 
 h3 {
     text-align: center;
+    text-decoration: underline;
 }
 
 .column {
@@ -86,6 +87,10 @@ h3 {
     border-right-style: dashed;
     margin-left: 10%;   
     margin-right: 10%;
+}
+
+.curve {
+    border-radius: 50%;
 }
     
 .smallspace {
