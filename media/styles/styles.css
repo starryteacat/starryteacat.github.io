@@ -72,7 +72,6 @@ ol {
 .container {
     display: flex; 
     flex-flow: row wrap;
-    margin-bottom: 90px;
 }
 
 .column {
@@ -114,9 +113,6 @@ ol {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     text-align: center; 
     background-color: #f77bb8;
