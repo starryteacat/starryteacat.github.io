@@ -5,13 +5,16 @@
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    min-height: 100%;
 }
 
-body{
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    position: relative;
     background-image: url("../../media/images/bg_stars.gif");
     width: 100%;
+    min-height: 100vh;
     font-family: Georgia, serif;
     color: white;
     border: white;
@@ -72,7 +75,15 @@ ol {
 .container {
     display: flex; 
     flex-flow: row wrap;
-    margin-bottom: 90px;
+    padding-bottom: 25%; /* Total bodge. Why does 25% seem perfect? */
+    /*
+	 * 25% is approximately the height of the footer, plus some extra that we
+	 * use as a """margin""" between the content and footer. If the footer's
+	 * content changes in the future, you'll need to readjust this percentage to
+	 * look good again.
+	 * It'd probably be a lot better to use some var() value for a fixed-height
+	 * footer so we can calculate this a hell of a lot more cleanly and nice. :3
+	 */
 }
 
 .column {
@@ -114,10 +125,8 @@ ol {
 }
 
 .footer {
-    position: static;
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
     text-align: center; 
     background-color: #f77bb8;
