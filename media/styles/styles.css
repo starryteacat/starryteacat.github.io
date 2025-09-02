@@ -55,6 +55,20 @@ p {
     margin: 10px;
 }
 
+ul {
+    text-align: left;
+    font-weight: 600;
+    margin: 10px;
+    list-style-position: inside;
+}
+
+ol {
+    text-align: left;
+    font-weight: 600;
+    margin: 10px;
+    list-style-position: inside;
+}
+
 .container {
     display: flex; 
     flex-flow: row wrap;
