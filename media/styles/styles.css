@@ -15,6 +15,7 @@ body{
     font-family: Georgia, serif;
     color: white;
     border: white;
+    position: absolute;
 }
 
 .header {
@@ -41,7 +42,6 @@ h1 {
     font-size: 50px;
 }
     
-
 h2 {
     font-size: 30px;
     text-align: center;
